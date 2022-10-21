@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__link:not(:last-child) {
+  padding-right: 50px;
+}
+
+@media (max-width: 970px) {
+  .about__link:not(:last-child) {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 870px) {
+  .about {
+    display: none;
+  }
+}

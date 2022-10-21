@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../public/fonts/gilroy-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../public/fonts/gilroy-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */ url("../public/fonts/gilroy-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../public/fonts/gilroy-regular.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../public/fonts/gilroy-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../public/fonts/gilroy-regular.svg#gilroy-regular") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Gilroy-Regular", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

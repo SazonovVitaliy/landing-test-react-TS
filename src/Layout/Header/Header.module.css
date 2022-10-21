@@ -1,0 +1,32 @@
+.nav {
+  margin: 45px 50px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+@media (max-width: 870px) {
+  .nav {
+    margin: 34px 50px 109px 40px;
+  }
+}
+@media (max-width: 550px) {
+  .nav {
+    margin: 29px 50px 62px 40px;
+  }
+  .nav__buttons {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

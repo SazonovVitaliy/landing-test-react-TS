@@ -1,0 +1,10 @@
+.languageblock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 60px;
+}
+
+.about__link:not(:last-child) {
+  padding-right: 15px;
+}

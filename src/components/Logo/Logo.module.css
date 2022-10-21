@@ -1,0 +1,26 @@
+.header {
+  font-weight: 800;
+}
+
+.large {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.small {
+  font-size: 30px;
+  line-height: 37.5px;
+}
+
+.black {
+  color: rgba(48, 48, 48, 1);
+}
+.white {
+  color: white;
+}
+@media (max-width: 550px) {
+  .large {
+    font-size: 30px;
+    line-height: 37.5px;
+  }
+}

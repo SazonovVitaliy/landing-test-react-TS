@@ -1,0 +1,8 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto minmax(320px, 1200px) auto;
+
+  grid-template-areas: " . content .";
+
+  background: linear-gradient(93.29deg, #388af3 21.04%, #a483e2 88.77%);
+}

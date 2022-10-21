@@ -1,0 +1,108 @@
+.main__wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(320px, 1200px) auto;
+  grid-template-areas: " . content .";
+}
+.content {
+  grid-area: content;
+  padding: 0 50px;
+}
+.paragraph {
+  max-width: 400px;
+}
+.user__data {
+  display: flex;
+}
+.routes {
+  display: flex;
+  margin-bottom: 31px;
+}
+.checkbox__block {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: -30px 0px 160px 0;
+}
+.checkbox {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px 0 0;
+}
+.checkbox__polit {
+  display: flex;
+}
+.link {
+  display: block;
+  color: #388af3;
+  padding-left: 5px;
+}
+@media (max-width: 870px) {
+  .main__wrapper {
+    padding: 0;
+  }
+  .content {
+    padding: 0 40px;
+  }
+  .routes {
+    margin-bottom: 31px;
+  }
+  .checkbox__block {
+    margin: -30px 0px 60px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    padding: 57px 0 22px 0;
+  }
+  .routes {
+    margin-bottom: 0;
+  }
+  .user__data {
+    display: block;
+  }
+  .checkbox__polit {
+    display: block;
+  }
+  .link {
+    padding: 0;
+  }
+  .checkbox__block {
+    margin: -30px 0px 35px 0;
+  }
+}
+
+@media (min-width: 870px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      "routes ."
+      "h1 . "
+      "paragraph ."
+      "form button"
+      "checkbox .";
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .routes {
+    grid-area: routes;
+  }
+  h1 {
+    grid-area: h1;
+  }
+  .paragraph {
+    grid-area: paragraph;
+  }
+  .form {
+    grid-area: form;
+  }
+  .btnletter {
+    grid-area: button;
+    margin: 0 0 0 184px !important;
+  }
+  .checkbox__block {
+    grid-area: checkbox;
+  }
+}

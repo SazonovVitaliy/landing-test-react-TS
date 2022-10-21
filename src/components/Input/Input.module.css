@@ -1,0 +1,55 @@
+.form {
+  padding: 20px 20px 60px 0;
+  width: 100%;
+}
+.form__label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 31px;
+  transition: 0.3s;
+  color: #e2e2e2;
+  font-size: 26px;
+  font-weight: 300;
+}
+.item {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.form__input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:focus):valid ~ .form__label {
+  top: -15px;
+  font-size: 16px;
+  line-height: 18.5px;
+}
+.valid {
+  color: red;
+}
+
+@media (max-width: 550px) {
+  .form__input:focus ~ .form__label,
+  .form__input:not(:focus):valid ~ .form__label {
+    top: -15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .form__label {
+    font-size: 22px;
+    line-height: 26.5px;
+  }
+}
