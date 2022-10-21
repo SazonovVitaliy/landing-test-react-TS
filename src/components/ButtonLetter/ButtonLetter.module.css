@@ -17,6 +17,7 @@
   font-weight: 800;
   color: #388af3;
   margin-bottom: 179px;
+  transition: all 0.5s;
 }
 
 .button svg {
@@ -34,11 +35,13 @@
 .button:hover svg {
   transform: translate(80px, -10px) scale(1.3, 1.3);
 }
+
 .button:hover div {
   margin-bottom: 70px;
 }
 .button:focus svg {
-  transform: translate(100px, -20px) scale(0.5, 0.5);
+  transition: all 1s ease 0s;
+  transform: translate(110px, -30px) scale(0.5, 0.5);
   background-image: #ffffff;
 }
 
@@ -46,7 +49,4 @@
   .button {
     margin-bottom: 100px;
   }
-}
-
-@media (max-width: 550px) {
 }
